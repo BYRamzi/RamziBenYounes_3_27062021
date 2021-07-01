@@ -4,21 +4,21 @@ body {
 }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 
 h3 {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
 h4 {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 15px;
 }
@@ -38,6 +38,24 @@ h4 {
 }
 .header__logo img {
   width: 50%;
+}
+
+.location {
+  background-color: #EAEAEA;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+.location__searchfield {
+  background-color: #EAEAEA;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location__icon {
+  margin-right: 10px;
+  margin-left: 72px;
 }
 
 .footer {
