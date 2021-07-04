@@ -1,5 +1,6 @@
-body {
+body, h4, p {
   margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -23,8 +24,13 @@ h3 {
 
 h4 {
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Robot", sans-serif;
+  font-weight: 100;
 }
 
 .btn-select {
@@ -33,6 +39,10 @@ h4 {
   border-radius: 25px;
   padding: 15px;
   margin: 30px 45px;
+}
+
+.btn-like {
+  font-size: 24px;
 }
 
 .header {
@@ -112,6 +122,34 @@ h4 {
   padding-top: 15px;
 }
 
+.operating-mode {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+.operating-mode__steps {
+  display: flex;
+  flex-direction: column;
+}
+.operating-mode__step {
+  background-color: #F6F6F6;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 12px #CDCAD1;
+}
+.operating-mode__step:hover {
+  background-color: #f2eafb;
+}
+.operating-mode__step:hover i {
+  color: #9356DC;
+}
+.operating-mode__step i {
+  font-size: 16px;
+  width: 40px;
+  color: grey;
+}
+
 .restaurants {
   display: flex;
   flex-direction: column;
@@ -128,22 +166,41 @@ h4 {
   display: flex;
   flex-direction: column;
   background-color: #FFF;
+  position: relative;
   border-radius: 20px;
   width: 100%;
-  height: 250px;
+  height: 260px;
   margin-bottom: 15px;
+  box-shadow: 2px 2px 12px #CDCAD1;
 }
 .restaurantbox__img {
   width: 100%;
-  height: 75%;
+  height: 70%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
+.restaurantbox__badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #3A8867;
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 2px;
+}
 .restaurantbox__description {
   display: flex;
-  padding: 10px 10px 10px 10px;
-  height: 25%;
   justify-content: space-between;
   align-items: center;
+  height: 30%;
+  padding-right: 25px;
+  padding-left: 15px;
+}
+.restaurantbox__text {
+  color: #000;
+}
+.restaurantbox__title {
+  margin-bottom: 2px;
 }/*# sourceMappingURL=main.css.map */
