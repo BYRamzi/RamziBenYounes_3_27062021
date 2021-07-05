@@ -5,26 +5,34 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sass/main.css">
 </head>
 
 <body>
-    <header class="menuheader">
+    <!--MENU HEADER-->
+    <header class="menuheader header">
         <h1 class="menuheader__logo header__logo">
             <a class="menuheader__backhome" href="index.html"><i class="fas fa-arrow-left"></i></a>
             <img src="images/logo/ohmyfood.png" alt="logo oh my food"/>
         </h1>  
     </header>
 
-    <main>
-        <img src="images/restaurants/a-la-francaise.jpg" alt="À la française"/>
+    <img class="menu-cover" src="images/restaurants/a-la-francaise.jpg" alt="À la française"/>
+
+    <!--RESTAURANT MENU-->
+    <main class="menu">
         <div class="restaurant">
-            <h2 class="restaurant_name">À la française</h2>
+            <h2 class="restaurant__name">À la française</h2>
             <div class="restaurant__like">
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart btn-like"></i>
             </div>
         </div>
 
+        <!--Meals list-->
         <section class="meals_list">
             <div class="meal">
                 <h3 class="meal__title">ENTRÉES</h3>
@@ -102,11 +110,12 @@
             </div>
         </section>
 
-        <div class="command">
-            <button class="command__btn" type="submit">Commander</button>
-        </div>
+        <!--Button command-->
+        <a class="command__btn btn-select" href="#">Commander</a>
+        
     </main>
 
+    <!--FOOTER-->
     <footer class="footer">
         <div class="footer__logo">
             <img src="images/logo/ohmyfood.png" alt="logo oh my food">
