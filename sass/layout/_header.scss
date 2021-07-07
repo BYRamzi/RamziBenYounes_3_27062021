@@ -4,7 +4,7 @@
 .header {
     background-color: $color-white;
     padding: 15px;
-    @include box-shadow;
+    @include box-shadow-lighter;
 
     &__logo {
         width: 100%;
