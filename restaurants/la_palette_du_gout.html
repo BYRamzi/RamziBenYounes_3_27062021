@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Le délice des sens</title>
+    <title>La palette du goût</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="../sass/main.css">
 </head>
 
 <body>
+
+    <!--LOADER-->
+    <div class="loader">
+        <div class="loader__bubblings">
+            <span class="loader__bubbles" id="bubble-1"></span>
+            <span class="loader__bubbles" id="bubble-2"></span>
+            <span class="loader__bubbles" id="bubble-3"></span>
+        </div>
+    </div>
+    
     <!--MENU HEADER-->
     <header class="menuheader header">
         <h1 class="menuheader__logo header__logo">
-            <a class="menuheader__backhome" href="index.html"><i class="fas fa-arrow-left"></i></a>
-            <img src="images/logo/ohmyfood.png" alt="logo oh my food"/>
+            <a class="menuheader__backhome" href="../index.html"><i class="fas fa-arrow-left"></i></a>
+            <img src="../images/logo/ohmyfood.png" alt="logo oh my food"/>
         </h1>
     </header>
 
-    <img class="menu-cover" src="images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens"/>
+    <img class="menu-cover" src="../images/restaurants/la-palette-du-gout.jpg" alt="La palette du goût"/>
 
     <!--RESTAURANT MENU-->
     <main class="menu">
         <div class="restaurant">
-            <h2 class="restaurant__name">Le délice des sens</h2>
+            <h2 class="restaurant__name">La palette du goût</h2>
             <div class="restaurant__like">
                 <i class="far fa-heart btn-like"></i>
             </div>
@@ -38,22 +48,22 @@
                 <h3 class="meal__title">ENTRÉES</h3>
                 <div class="meal__description appear-1">
                     <div class="meal__text">
-                        <h4 class="meal__name">Tartare de thon</h4>
-                        <p class="meal__sides">Assaisonné au yuzu</p>
+                        <h4 class="meal__name">Fricassée d'escargot</h4>
+                        <p class="meal__sides">Au piment d'espelette</p>
                     </div>
                     <span class="meal__price">25€</span>
                 </div>
                 <div class="meal__description appear-2">
                     <div class="meal__text">
-                        <h4 class="meal__name">Bouchée de homard croustillant</h4>
-                        <p class="meal__sides">Et sa farandole de petits légumes</p>
+                        <h4 class="meal__name">Foie gras de canard mi-cuit</h4>
+                        <p class="meal__sides">Et ses copeaux de truffe noire</p>
                     </div>
                     <span class="meal__price">35€</span>
                 </div>
                 <div class="meal__description appear-3">
                     <div class="meal__text">
-                        <h4 class="meal__name">Velouté de cèpes</h4>
-                        <p class="meal__sides">Aux truffes</p>
+                        <h4 class="meal__name">Oeuf au plat</h4>
+                        <p class="meal__sides">Assaisonné à la truffe sur lit de caviar</p>
                     </div>
                     <span class="meal__price">20€</span>
                 </div>
@@ -63,22 +73,22 @@
                 <h3 class="meal__title">PLATS</h3>
                 <div class="meal__description appear-4">
                     <div class="meal__text">
-                        <h4 class="meal__name">Poulet rôti aux herbes de Provence</h4>
-                        <p class="meal__sides">Et sa crème de truffe</p>
+                        <h4 class="meal__name">Filet de boeuf aux herbes</h4>
+                        <p class="meal__sides">Accompagné de sa ribambelle de légumes</p>
                     </div>
                     <span class="meal__price">40€</span>
                 </div>
                 <div class="meal__description appear-5">
                     <div class="meal__text">
-                        <h4 class="meal__name">Langouste rôtie</h4>
-                        <p class="meal__sides">Et ses légumes de saison</p>
+                        <h4 class="meal__name">Parmentier de queue de boeuf</h4>
+                        <p class="meal__sides">À la truffe noire sur sa purée de panais</p>
                     </div>
                     <span class="meal__price">35€</span>
                 </div>
                 <div class="meal__description appear-6">
                     <div class="meal__text">
-                        <h4 class="meal__name">Côte de boeuf Angus</h4>
-                        <p class="meal__sides">Et sa purée de panais</p>
+                        <h4 class="meal__name">Filet de turbot</h4>
+                        <p class="meal__sides">Aux agrumes</p>
                     </div>
                     <span class="meal__price">44€</span>
                 </div>
@@ -88,22 +98,22 @@
                 <h3 class="meal__title">DESSERTS</h3>
                 <div class="meal__description appear-7">
                     <div class="meal__text">
-                        <h4 class="meal__name">Farandole de desserts</h4>
-                        <p class="meal__sides">Du chef</p>
+                        <h4 class="meal__name">Paris-Brest</h4>
+                        <p class="meal__sides">Revisité</p>
                     </div>
                     <span class="meal__price">18€</span>
                 </div>
                 <div class="meal__description appear-8">
                     <div class="meal__text">
-                        <h4 class="meal__name">Crème brulée</h4>
-                        <p class="meal__sides">Revisité</p>
+                        <h4 class="meal__name">Macaron au chocolat d'exception</h4>
+                        <p class="meal__sides">Et glace à la vanille de Madagascar</p>
                     </div>
                     <span class="meal__price">22€</span>
                 </div>
                 <div class="meal__description appear-9">
                     <div class="meal__text">
-                        <h4 class="meal__name">Tiramisu</h4>
-                        <p class="meal__sides">À la noisette</p>
+                        <h4 class="meal__name">Mousse au chocolat</h4>
+                        <p class="meal__sides">Au piment d'Espelette et à la truffe noire</p>
                     </div>
                     <span class="meal__price">23€</span>
                 </div>
@@ -117,7 +127,7 @@
     <!--FOOTER-->
     <footer class="footer">
         <div class="footer__logo">
-            <img src="images/logo/ohmyfood.png" alt="logo oh my food">
+            <img src="../images/logo/ohmyfood.png" alt="logo oh my food">
         </div>
         <ul class="footer__list">
             <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
