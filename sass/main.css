@@ -48,12 +48,31 @@ p {
 .btn-select:hover {
   transform: scale(1.1);
   opacity: 0.9;
-  transform: all 500ms;
   box-shadow: 2px 2px 12px #050505;
 }
 
-.btn-like {
+.like {
   font-size: 24px;
+  cursor: pointer;
+  z-index: 15;
+}
+.like:hover .like__btn {
+  color: #FF79DA;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+.like:focus .like__btn {
+  color: #FF79DA;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.6s ease;
+}
+
+.like__btn--home {
+  position: relative;
+  bottom: 70px;
+  left: 280px;
 }
 
 .loader {
@@ -64,7 +83,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 20;
   -webkit-animation: loader 3s linear;
           animation: loader 3s linear;
   visibility: hidden;
@@ -78,7 +97,7 @@ p {
   justify-content: center;
   margin: auto;
   position: fixed;
-  z-index: 20;
+  z-index: 30;
   top: 0;
   left: 0;
   right: 0;
