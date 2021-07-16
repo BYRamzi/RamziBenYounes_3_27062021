@@ -80,16 +80,22 @@
     }
 }
 
-.restaurantbox {
+.restaurant-box {
     display: flex;
     flex-direction: column;
     background-color: $color-white;
     position: relative;
     border-radius: 20px;
     width: 100%;
+    max-width: 360px;
     height: 260px;
     margin-bottom: 15px;
     @include box-shadow-lighter;
+    transition: all 500ms;
+    &:hover {
+        transform: scale(1.03);
+        @include box-shadow-darker;
+    }
 
     &__img {
         width: 100%;

@@ -75,6 +75,7 @@
     }
 
     &__text {
+        width: 75%;
         padding: 10px;
         @extend %text-overflow;
     }
@@ -98,7 +99,7 @@
 
     .checkbox {
         display: none;
-        width: 20%;
+        width: 25%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -114,43 +115,10 @@
     }
 }
 
-.appear-1 {
-    animation-delay: 0.1s;
-}
-
-.appear-2 {
-    animation-delay: 0.3s;
-}
-
-.appear-3 {
-    animation-delay: 0.5s;
-}
-
-.appear-4 {
-    animation-delay: 0.7s;
-}
-
-.appear-5 {
-    animation-delay: 1.1s;
-}
-
-.appear-6 {
-    animation-delay: 1.3s;
-}
-
-.appear-7 {
-    animation-delay: 1.5s;
-}
-
-.appear-8 {
-    animation-delay: 1.7s;
-}
-
-.appear-9 {
-    animation-delay: 1.9s;
-}
-.appear-10 {
-    animation-delay: 2.1s;
+@for $i from 1 through 9 {
+    .appear-#{$i} {
+        animation-delay: 0.5s * $i;
+    }
 }
 
 @keyframes appear {
@@ -163,7 +131,7 @@
     }
 }
 
-.meal__description:hover .checkbox {
+.meal__description:focus .checkbox {
     display: block;
     background: $color-tertiary;
     overflow: hidden;
@@ -173,7 +141,7 @@
     transform-origin: 50% 50%;
 }
 
-.meal__description:hover .meal__price {
+.meal__description:focus .meal__price {
     animation: checkbox ease 0.3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;

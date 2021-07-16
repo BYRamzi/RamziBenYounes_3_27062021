@@ -9,7 +9,7 @@
     right: 0;
     bottom: 0;
     z-index: 20;
-    animation: loader 3s linear;
+    animation: loader 1.6s linear;
     visibility: hidden;
 
     &__bubblings {
@@ -26,7 +26,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        animation: loader 3s linear;
+        animation: loader 1.6s linear;
         visibility: hidden;
     }
 
@@ -36,7 +36,7 @@
         margin: 4px;
         background: $color-primary;
         border-radius: 32px;
-        animation: bubbling 0.6s infinite alternate;
+        animation: bubbling 0.5s infinite alternate;
     }
 }
 
@@ -45,11 +45,11 @@
 }
 
 #bubble-2 {
-    animation-delay: 0.18s;
+    animation-delay: 0.15s;
 }
 
 #bubble-3 {
-    animation-delay: 0.36s;
+    animation-delay: 0.30s;
 }
 
 @keyframes bubbling {
