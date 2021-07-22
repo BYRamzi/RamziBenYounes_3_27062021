@@ -37,12 +37,15 @@
     &__name {
         font-family: $menu-title-font;
         font-size: 28px;
+        margin: 10px;
     }
 
     &__like {
         margin-right: 20px;
     }
 }
+
+/* Meal list */
 
 .meals__list {
     display: flex;
@@ -58,9 +61,28 @@
 .meal {
     display: flex;
     flex-direction: column;
-    
+    position: relative;
+    flex-wrap: wrap;
+
+    @media (min-width: 500px) {
+        width: 100%;
+        flex-direction: row;
+    }
+
     &__title {
         font-size: 16px;
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 10px;
+        &:before {
+            content: '';
+            height: 2px;
+            width: 40px;
+            background-color:$color-tertiary;
+            bottom: -5px;
+            position: absolute;
+        }
     }
 
     &__description {
@@ -70,13 +92,27 @@
         border-radius: 15px;
         margin-bottom: 15px;
         overflow: hidden;
-        @include box-shadow-lighter;
+        cursor: pointer;
         animation: appear 1s both;
+        width: calc(100% - 20px);
+        margin: 10px;
+
+        @include box-shadow-lighter;
+
+        @media (min-width: 600px) {
+            width: calc(100%/2 - 20px);
+            flex-direction: row;
+        }
+
+        @include tablet {
+            width: calc(100%/3 - 20px);
+        }
     }
 
     &__text {
         width: 75%;
         padding: 10px;
+        
         @extend %text-overflow;
     }
 
@@ -87,6 +123,7 @@
     &__sides {
         font-size: 14px;
         margin-top: 4px;
+        
         @extend %text-overflow;
     }
 
@@ -99,7 +136,7 @@
 
     .checkbox {
         display: none;
-        width: 25%;
+        width: 80px;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -115,7 +152,7 @@
     }
 }
 
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
     .appear-#{$i} {
         animation-delay: 0.5s * $i;
     }
@@ -131,7 +168,7 @@
     }
 }
 
-.meal__description:focus .checkbox {
+.meal__description:hover .checkbox {
     display: block;
     background: $color-tertiary;
     overflow: hidden;
@@ -141,11 +178,11 @@
     transform-origin: 50% 50%;
 }
 
-.meal__description:focus .meal__price {
+.meal__description:hover .meal__price {
     animation: checkbox ease 0.3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-}    
+}   
     
 @keyframes checkbox {
     0% {

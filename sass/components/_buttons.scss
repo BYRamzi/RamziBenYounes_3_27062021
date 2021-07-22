@@ -1,6 +1,8 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+/* Select button */
+
 .btn-select {
     color: $color-white;
     display: inline-block;
@@ -13,16 +15,22 @@
     @include linear-gradient;
     @include box-shadow-lighter;     
     transition: all 500ms;
+    
     &:hover {
         transform: scale(1.1);
         opacity: 0.9;
+        
         @include box-shadow-darker;
     }
 }
 
+/* Like button */
+
 .like {
     font-size: 24px;
     cursor: pointer;
+    margin: 10px;
+    
     &:hover {
         .like__btn {
             color: $color-primary;

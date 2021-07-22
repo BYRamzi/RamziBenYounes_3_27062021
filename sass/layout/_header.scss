@@ -1,9 +1,12 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+/* Header */
+
 .header {
     background-color: $color-white;
     padding: 15px;
+    
     @include box-shadow-lighter;
 
     &__logo {
@@ -16,6 +19,7 @@
 
         img {
             width: 50%;
+            max-width: 300px;
         }
     }
 }
