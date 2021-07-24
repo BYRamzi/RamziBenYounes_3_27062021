@@ -152,6 +152,22 @@
     }
 }
 
+.meal__description:hover .checkbox {
+    display: block;
+    background: $color-tertiary;
+    overflow: hidden;
+    animation: checkbox ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+}
+
+.meal__description:hover .meal__price {
+    animation: checkbox ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+} 
+
 @for $i from 1 through 10 {
     .appear-#{$i} {
         animation-delay: 0.5s * $i;
@@ -167,22 +183,6 @@
         opacity: 1;
     }
 }
-
-.meal__description:hover .checkbox {
-    display: block;
-    background: $color-tertiary;
-    overflow: hidden;
-    animation: checkbox ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-}
-
-.meal__description:hover .meal__price {
-    animation: checkbox ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}   
     
 @keyframes checkbox {
     0% {
